@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+aside {
+    background-color: grey;
+    padding: 30px;
+    width: 20%;
+}
+
+main {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 30px;
+    width: 80%;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        width: 100vw;
+    }
+    aside {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+}

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.container .timeline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .timeline .evento {
+    max-width: 500px;
+    width: 450px;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.205);
+    display: flex;
+    gap: 20px;
+}
+
+.container .timeline .evento .titulo {
+    width: 30%;
+}
+
+.container .timeline .evento .content {
+    width: 70%;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+    .container .timeline .evento {
+        flex-direction: column;
+        width: 45%;
+    }
+
+    .container .timeline .evento .titulo {
+        width: 100%;
+    }
+    
+    .container .timeline .evento .content {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .container .timeline .evento {
+        flex-direction: column;
+        width: 100%;
+    }
+}
